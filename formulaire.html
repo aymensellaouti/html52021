@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Présentation</legend>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="nom"
+          id="name"
+          placeholder="Veuillez renseigner votre nom"
+        />
+        <br />
+        <input type="number" name="age" pattern="[01]?\d{1,2}">
+        <br>
+        <label for="desc">Description</label>
+
+        <textarea id="desc" name="description" cols="30" rows="10">
+                  Bonjour veuillez saisir votre description
+              </textarea
+        >
+        <br />
+        <input type="password" name="pwd" required/>
+      </fieldset>
+      <fieldset>
+        <legend>Mes préférences</legend>
+        <input type="checkbox" name="favoriteTeam" value="barca" /> Barca
+        <input type="checkbox" name="favoriteTeam" value="real" /> Real
+        <input type="checkbox" name="favoriteTeam" value="om" /> om
+        <input type="checkbox" name="favoriteTeam" value="psg" /> PSG
+        <input type="checkbox" name="favoriteTeam" value="est" />EST
+        <input type="checkbox" name="favoriteTeam" value="ca" /> CA
+        <input type="checkbox" name="favoriteTeam" value="ess" /> ESS
+        <input type="checkbox" name="favoriteTeam" value="ust" /> UST
+        <input type="checkbox" name="favoriteTeam" value="css" /> Css
+        <br />
+
+        <input type="radio" name="favoriteColor" value="blue" /> Blue
+        <input type="radio" name="favoriteColor" value="red" /> Red
+        <input type="radio" name="favoriteColor" value="pink" /> Pink
+        <input type="radio" name="favoriteColor" value="green" /> Green
+        <br />
+        <select name="cours" multiple>
+          <option value="web">Web</option>
+          <option value="bd">BD</option>
+          <option value="conception">Conception</option>
+          <option value="algo">Algo</option>
+        </select>
+      </fieldset>
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
